@@ -3,57 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="Iron Forge Fitness - Elite gym with 24/7 access, expert coaches, and transformative workouts. Join the strongest community.">
+  <meta name="keywords" content="fitness, gym, workout, strength training, HIIT, personal training">
+  <meta name="author" content="Iron Forge Fitness">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Iron Forge Fitness | Train Like a Beast">
+  <meta property="og:description" content="Elite gym with 24/7 access, expert coaches, and transformative workouts.">
+  <meta property="og:image" content="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg">
+  <meta property="og:type" content="website">
+  
+  <!-- Preconnect for faster external resource loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
   <title>Iron Forge Fitness | Ultimate Gym Experience</title>
+  
   <!-- Google Fonts & Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- External CSS -->
+  
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Skip to content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <header>
   <div class="container">
     <nav class="navbar">
       <div class="logo">IRON<span>FORGE</span></div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
       <div class="nav-links">
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
         <a href="#classes">Classes</a>
         <a href="#pricing">Membership</a>
         <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
-        <a href="#" class="btn btn-primary" style="padding: 10px 24px;">Join Now</a>
+        <a href="#" class="btn btn-primary btn-join">Join Now</a>
       </div>
     </nav>
   </div>
 </header>
 
-<main>
-  <!-- Hero Section with real image -->
-  <div class="container">
-    <div class="hero">
-      <div class="hero-content">
-        <div class="hero-badge"><i class="fas fa-dumbbell"></i> elite strength community</div>
-        <h1>Train like a beast, <i>look like a legend</i></h1>
-        <p class="hero-description">Iron Forge isn't just a gym — it's a brotherhood of discipline, sweat, and results. Get stronger, faster, and unstoppable.</p>
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-          <a href="#" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Start 7-day trial</a>
-          <a href="#" class="btn btn-outline-light"><i class="fas fa-play-circle"></i> Virtual tour</a>
+<main id="main-content">
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-badge"><i class="fas fa-dumbbell"></i> elite strength community</div>
+          <h1>Train like a beast, <span class="accent-text">look like a legend</span></h1>
+          <p class="hero-description">Iron Forge isn't just a gym — it's a brotherhood of discipline, sweat, and results. Get stronger, faster, and unstoppable.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary" id="trialBtn"><i class="fas fa-calendar-alt"></i> Start 7-day trial</a>
+            <a href="#" class="btn btn-outline-light" id="virtualTourBtn"><i class="fas fa-play-circle"></i> Virtual tour</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item"><h3>500+</h3><p>active members</p></div>
+            <div class="stat-item"><h3>24/7</h3><p>access gym</p></div>
+            <div class="stat-item"><h3>15+</h3><p>expert coaches</p></div>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div class="stat-item"><h3>500+</h3><p>active members</p></div>
-          <div class="stat-item"><h3>24/7</h3><p>access gym</p></div>
-          <div class="stat-item"><h3>15+</h3><p>expert coaches</p></div>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Athlete lifting weights in modern gym" loading="eager">
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Athlete lifting weights in modern gym" loading="lazy">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Features section -->
-  <div class="section">
+  <section class="section">
     <div class="container">
       <div class="section-title">Why Iron Forge?</div>
       <div class="section-sub">More than weights — a transformation hub designed for real results.</div>
@@ -80,10 +106,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- CLASSES section with dynamic images -->
-  <div id="classes" class="section" style="padding-top: 0;">
+  <!-- CLASSES section -->
+  <section id="classes" class="section">
     <div class="container">
       <div class="section-title">Signature Classes</div>
       <div class="section-sub">Find your fire — from high intensity to strength foundations</div>
@@ -114,10 +140,53 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- GALLERY section with fresh fitness photos -->
-  <div id="gallery" class="gallery-section">
+  <!-- Testimonials Section (NEW) -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <div class="section-title">What Our Members Say</div>
+      <div class="section-sub">Real transformations, real stories</div>
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Iron Forge changed my life. In 6 months, I lost 30lbs and gained confidence I never knew I had. The coaches actually care."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JD</div>
+            <div>
+              <h4>Jessica Davis</h4>
+              <p>Member since 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Best gym in the city. 24/7 access means I can train at 5 AM before work. Equipment is always clean and maintained."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MT</div>
+            <div>
+              <h4>Marcus Thompson</h4>
+              <p>Elite Member</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The community here is unmatched. Everyone pushes each other to be better. Finally found my fitness home."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <h4>Sarah Rodriguez</h4>
+              <p>HIIT enthusiast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY section -->
+  <section id="gallery" class="gallery-section">
     <div class="container">
       <div class="section-title">Inside Iron Forge</div>
       <div class="section-sub">Real moments, raw energy, unstoppable community</div>
@@ -128,10 +197,10 @@
         <div class="gallery-img"><img src="https://images.pexels.com/photos/2938166/pexels-photo-2938166.jpeg?auto=compress&cs=tinysrgb&w=800" alt="woman boxing training" loading="lazy"></div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- PRICING section -->
-  <div id="pricing" class="section">
+  <section id="pricing" class="section">
     <div class="container">
       <div class="section-title">Simple, honest pricing</div>
       <div class="section-sub">No hidden fees. Cancel anytime. Start today.</div>
@@ -143,13 +212,13 @@
             <li><i class="fas fa-check"></i> Gym access 6am–10pm</li>
             <li><i class="fas fa-check"></i> 2 group classes / week</li>
             <li><i class="fas fa-check"></i> Locker & Wi-Fi</li>
-            <li><i class="fas fa-times" style="color: #4b5563;"></i> Personal training</li>
+            <li><i class="fas fa-times"></i> Personal training</li>
           </ul>
-          <a href="#" class="btn btn-outline-light" style="width: 100%;">Choose plan</a>
+          <a href="#" class="btn btn-outline-light btn-plan">Choose plan</a>
         </div>
         <div class="pricing-card popular">
-          <div style="background:#e63946; display:inline-block; padding:4px 18px; border-radius:40px; font-size:0.75rem; font-weight:bold;">🔥 MOST POPULAR</div>
-          <h3 style="margin-top: 16px;">Elite</h3>
+          <div class="popular-badge">🔥 MOST POPULAR</div>
+          <h3>Elite</h3>
           <div class="price">$89<span>/month</span></div>
           <ul class="pricing-features">
             <li><i class="fas fa-check"></i> 24/7 unlimited access</li>
@@ -157,7 +226,7 @@
             <li><i class="fas fa-check"></i> 1 personal coaching session/month</li>
             <li><i class="fas fa-check"></i> Sauna & recovery lounge</li>
           </ul>
-          <a href="#" class="btn btn-primary" style="width: 100%;">Get Elite</a>
+          <a href="#" class="btn btn-primary btn-plan">Get Elite</a>
         </div>
         <div class="pricing-card">
           <h3>Day Pass</h3>
@@ -168,71 +237,110 @@
             <li><i class="fas fa-check"></i> Towel service</li>
             <li><i class="fas fa-check"></i> No commitment</li>
           </ul>
-          <a href="#" class="btn btn-outline-light" style="width: 100%;">Buy day pass</a>
+          <a href="#" class="btn btn-outline-light btn-plan">Buy day pass</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- CTA Banner with motivational image background effect -->
+  <!-- NEWSLETTER & CTA Section (Combined) -->
   <div class="container">
-    <div class="cta-section" style="background: linear-gradient(105deg, #0c0f15 0%, #11161e 100%), url('https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&w=1200'); background-blend-mode: overlay; background-size: cover; background-position: center;">
+    <div class="cta-section">
       <h2>Ready to forge your best self?</h2>
-      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: #eef2f5;">Get 7 days of unlimited training + free fitness consultation</p>
-      <div class="cta-buttons" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 28px;">
-        <a href="#" class="btn btn-primary" style="background:#e63946;"><i class="fas fa-dumbbell"></i> Claim your trial</a>
-        <a href="#" class="btn btn-outline-light"><i class="fas fa-comment"></i> Chat with coach</a>
+      <p class="cta-description">Get 7 days of unlimited training + free fitness consultation</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary cta-trial"><i class="fas fa-dumbbell"></i> Claim your trial</a>
+        <a href="#" class="btn btn-outline-light cta-chat"><i class="fas fa-comment"></i> Chat with coach</a>
       </div>
     </div>
   </div>
 
-  <!-- Contact info -->
-  <div id="contact" class="container">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin: 40px 0 20px;">
-      <div>
-        <h3><i class="fas fa-map-pin"></i> Visit us</h3>
-        <p style="color:#b9c3cf; margin-top: 8px;">451 Steel Avenue, Downtown Metropolis<br>Open 24/7 for Elite members</p>
-      </div>
-      <div>
-        <h3><i class="fas fa-phone-alt"></i> Contact</h3>
-        <p style="color:#b9c3cf; margin-top: 8px;">+1 (800) 456-7890<br>hello@ironforgefitness.com</p>
-      </div>
-      <div>
-        <h3><i class="fas fa-clock"></i> Staff hours</h3>
-        <p style="color:#b9c3cf; margin-top: 8px;">Mon-Fri: 8am – 10pm<br>Weekends: 9am – 6pm</p>
+  <!-- NEWSLETTER Signup Form -->
+  <div class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <i class="fas fa-envelope newsletter-icon"></i>
+          <h3>Get fitness tips & exclusive offers</h3>
+          <p>Subscribe to our newsletter for workout tips, nutrition advice, and special membership deals.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+          <div class="form-group">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <div id="newsletterMessage" class="form-message"></div>
+        </form>
       </div>
     </div>
   </div>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3><i class="fas fa-map-pin"></i> Visit us</h3>
+          <p>451 Steel Avenue, Downtown Metropolis<br>Open 24/7 for Elite members</p>
+          <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+          <p>+1 (800) 456-7890<br>hello@ironforgefitness.com</p>
+          <h3><i class="fas fa-clock"></i> Staff hours</h3>
+          <p>Mon-Fri: 8am – 10pm<br>Weekends: 9am – 6pm</p>
+        </div>
+        <div class="contact-form-wrapper">
+          <h3>Send us a message</h3>
+          <form id="contactForm" class="contact-form">
+            <input type="text" id="contactName" placeholder="Your name" required>
+            <input type="email" id="contactEmail" placeholder="Your email" required>
+            <textarea id="contactMessage" rows="4" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            <div id="contactFormMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="logo" style="font-size: 1.6rem;">IRON<span>FORGE</span></div>
-        <p style="margin: 16px 0;">Built for warriors, athletes, and everyday legends. Redefine your limits.</p>
+        <div class="logo">IRON<span>FORGE</span></div>
+        <p>Built for warriors, athletes, and everyday legends. Redefine your limits.</p>
         <div class="social-links">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
-        <p><a href="#" style="color:#b9c3cf; text-decoration: none;">Membership</a></p>
-        <p><a href="#" style="color:#b9c3cf; text-decoration: none;">Trainers</a></p>
-        <p><a href="#" style="color:#b9c3cf; text-decoration: none;">Schedule</a></p>
+        <p><a href="#">Membership</a></p>
+        <p><a href="#">Trainers</a></p>
+        <p><a href="#">Schedule</a></p>
+        <p><a href="#">FAQ</a></p>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
-        <p><a href="#" style="color:#b9c3cf; text-decoration: none;">Terms</a></p>
-        <p><a href="#" style="color:#b9c3cf; text-decoration: none;">Privacy</a></p>
-        <p><a href="#" style="color:#b9c3cf; text-decoration: none;">FAQs</a></p>
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Cookie Policy</a></p>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 48px; font-size: 0.85rem; color: #6c7e91;">© 2026 Iron Forge Fitness — Ignite the fire within.</div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Iron Forge Fitness — Ignite the fire within.</p>
+    </div>
   </div>
 </footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
